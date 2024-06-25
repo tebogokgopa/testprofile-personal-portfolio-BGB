@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid black;
+}
+nav label{
+    text-transform: capitalize;
+    color: black;
+    font-size:xx-large;
+    font-weight: 500;
+    margin-left: 3vw;
+    letter-spacing: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 5px 5px grey;
+}
+nav label::first-letter{
+    text-transform: capitalize;
+    font-size:xx-large;
+    color: red;
+    font-weight: 500;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+nav ul li{
+    margin-right: 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: larger;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 5px 5px grey;
+}
+
+nav ul li a:hover{
+    box-shadow: 5px 5px black;
+    transform: 2s;
+}
+
+aside{
+    background-color: white;
+    margin-top: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 2vw;
+    position: fixed;
+    height: 50vh;
+    width: 5vw;
+    left: 0;
+    border-radius: 0.5vh;
+    background-color: transparent;
+}
+
+aside a {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: transparent;
+}
+aside a img{
+    height: 50px;
+    width: 50px;
+}
+
+aside a:hover{
+    border-radius: 50%;
+    box-shadow: 3px 3px grey;
+    transition: .5s;
+}
+
+main{ 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.mainimage{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 500px;
+}
+
+main .mainimage img{
+    border: 2px solid black;
+    box-shadow: 15px 15px grey;
+    height: 75vh;
+    width: 35vw;
+}
+/*
+label::after{
+    content: '';
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    top: 0;
+    right: 0;
+}*/
+.maintext{
+    height: 100%;
+    width: 50vw;
+    margin-right: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.maintextbox{
+    display: flex;
+    border: 1px solid black;
+    height: fit-content;
+    padding: 30px;
+    box-shadow: 10px 10px black;
+    width: 70vh;
+    height: 35vh;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+}
+.maintextbox p{
+    margin-top: 3vh;
+}
+.aboutme-btn{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-top: 5vh;
+    border: 1px solid black;
+    height: fit-content;
+    padding: 15px;
+    box-shadow: 5px 5px grey; 
+    margin-left: 10vw;
+    font-size: 20px;
+    transition: 1.5s;
+}
+.aboutme-btn:hover{
+    background-color: grey;
+    color: white;
+    box-shadow: 5px 5px black; 
+}
+.aboutsection{ 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.aboutsectiontoprow{
+    height: 10vh;
+    margin-top: 15vh;
+}
+.aboutsectiontoprow h1{
+    font-size: 35px;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px grey;
+}
+.aboutsectionbottomrow{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.aboutsectionbottomrow article{
+    height: 85%;
+    width: 25vw;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 8px 8px grey;
+    margin-left: 5vw;
+}
+.aboutsectionbottomrow article p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.contactmesection{ 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.contactmesectiontoprow{
+    height: 10vh;
+    margin-top: 15vh;
+}
+.contactmesectiontoprow h1{
+    font-size: 35px;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px grey;
+}
+
+.contactmesectionbottomrow{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.articlecards{
+    height: 85%;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.articlecards div{
+    height: 18vh;
+    width: 15vw;
+    border: 1px solid black;
+    box-shadow: 5px 5px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.articlecards div img{
+    height: 50px;
+}
+.articlecards div p{
+    padding-top: 10px;
+}
+
+.articleform{
+    height: 85%;
+    width: 60vw;
+}
+
+.articleform{
+    height: 95%;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.articleform form{
+    width: 80%;
+    height: 95%;
+    border: 1px solid black;
+    box-shadow: 8px 8px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.articleform form input[type='text']{
+    width: 80%;
+    height: 10%;
+    font-size: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+}
+
+.articleform form textarea{
+    width: 80%;
+    font-size: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+}
+
+.articleform form input[type='button']{
+    width: 50%;
+    height: 10%;
+    font-size: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px grey;
+}
+
+.articleform form input[type='button']:hover{
+    box-shadow: 5px 5px black;
+}
+.aboutmearticleheadeing h1{
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}

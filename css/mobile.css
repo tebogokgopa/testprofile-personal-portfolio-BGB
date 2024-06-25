@@ -1,0 +1,28 @@
+
+@media only screen and (max-width : 768px){
+    
+    nav {
+        display: none;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    main{ 
+        height: 200vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .mainimage{
+        width: 70%;
+        margin-top: 15vh;
+    }
+
+
+}
